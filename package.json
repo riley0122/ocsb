@@ -1,0 +1,20 @@
+{
+  "name": "ocsb",
+  "version": "1.0.0",
+  "description": "On Change Segmented Builder",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riley0122/ocsb.git"
+  },
+  "author": "Riley0122",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/riley0122/ocsb/issues"
+  },
+  "homepage": "https://github.com/riley0122/ocsb#readme"
+}
