@@ -2,10 +2,12 @@
   "name": "ocsb",
   "version": "1.0.0",
   "description": "On Change Segmented Builder",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rmdir /S /Q dist & rmdir /S /Q build",
+    "build": "npm run clean & tsc & esbuild ./build/src/*.js --outdir=dist --minify"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/riley0122/ocsb/issues"
   },
-  "homepage": "https://github.com/riley0122/ocsb#readme"
+  "homepage": "https://github.com/riley0122/ocsb#readme",
+  "dependencies": {
+    "@types/node": "^20.11.19"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
 }
